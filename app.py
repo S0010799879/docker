@@ -19,7 +19,7 @@ images = [
     "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr03/15/10/anigif_enhanced-buzz-11980-1381846269-1.gif"
     ]
 
-@app.route('/')
+@app.route('/img')
 def index():
     url = random.choice(images)
     return render_template('index.html', url=url)
